@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <cmath>
 
-int func();
+int Days(int *d);
+int Money(int *s);
 
 #endif
