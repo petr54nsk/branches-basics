@@ -1,5 +1,4 @@
 #include "deposit.h"
-#include "deposit.cpp"//
 int main (){
 int d,p,s;
 int k=true;
@@ -8,8 +7,7 @@ int k=true;
 	Days(&d);
 	printf ("Enter the amount of your deposit: ");
 	scanf("%d",&s);
-	Money(&s);
-	system("cls");
+	Money(&s);;
 		if (s<100000){
 			if(d>=0 && d<=30){
 				p=s-s*0.1;

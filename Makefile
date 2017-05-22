@@ -1,14 +1,14 @@
 CC = g++
 MO = ./build/main.o
 DO = ./build/deposit.o
-MC = ./src/main.cpp
-DC = ./src/deposit.cpp
-MT = ./test/main.cpp
-DT = ./test/deposit_test.cpp
-VT = ./test/validation_test.cpp
-MTO = ./test/build/main_test.o
-DTO = ./test/build/deposit_test.o
-VTO = ./test/build/validation_test.o
+MC = ./src/main.c
+DC = ./src/deposit.c
+MT = ./test/main.c
+DT = ./test/deposit_test.c
+VT = ./test/Val_test.c
+MTO = ./build/test/main_test.o
+DTO = ./build/test/deposit_test.o
+VTO = ./build/test/Val_test.o
 
 all: DepositCalc Test
 
@@ -34,5 +34,5 @@ $(VTO): $(VT)
 	 $(CC) -c $(VT) -o $(VTO)
 
 clean:
-	rm ./build/*.o
-	rm ./test/build/*.o
+		rm ./build/*.o
+		rm ./build/test/*.o
