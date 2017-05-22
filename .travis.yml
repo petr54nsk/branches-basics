@@ -1,7 +1,6 @@
-language: c++
+language: cpp
 compiler: g++
 
 script:
 - make
-
--./bin/deposit-calc_test
+- /bin/deposit-calc_test
